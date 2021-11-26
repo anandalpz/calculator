@@ -1,0 +1,25 @@
+.main{
+    margin-top: 50px;
+    margin-left: 38%;
+    width: 300px;
+    height: 400px;
+
+}
+input{
+    width: 300px;
+    height: 80px;
+}
+/* .sub1{
+    
+} */
+.big{
+  width: 145px;
+}
+button{
+    width: 70px;
+    height: 60px;
+    padding: 10px;
+}
+div{
+    padding: 1px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+     crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/8fb0714826.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="./calc.css">
+</head>
+<body>
+<div class="main">
+     <!-- <h1 style="text-align: center;">Calculator</h1> -->
+    <input type="text" id="result" style="width: 295px; background-color:ghostwhite;">
+   <div class="sub1">
+        <button type="button" class="btn btn-light big" onclick="clearBox()">C</button>
+        <button type="button" class="btn btn-light" onclick="backSpace()">DEL</button>
+        <button type="button" class="btn btn-light"  onclick="displayValue('/')">/</button>
+   </div>
+   <div>
+    <button type="button" class="btn btn-light" onclick="displayValue('1')">1</button>
+    <button type="button" class="btn btn-light"  onclick="displayValue('2')">2</button>
+    <button type="button" class="btn btn-light"  onclick="displayValue('3')">3</button>
+    <button type="button" class="btn btn-light"  onclick="displayValue('*')">*</button>
+   </div>
+   <div>
+    <button type="button" class="btn btn-light"  onclick="displayValue('4')">4</button>
+    <button type="button" class="btn btn-light"  onclick="displayValue('5')">5</button>
+    <button type="button" class="btn btn-light"  onclick="displayValue('6')">6</button>
+    <button type="button" class="btn btn-light"  onclick="displayValue('+')">+</button>
+   </div>
+   <div>
+    <button type="button" class="btn btn-light"  onclick="displayValue('7')">7</button>
+    <button type="button" class="btn btn-light"  onclick="displayValue('8')">8</button>
+    <button type="button" class="btn btn-light"  onclick="displayValue('9')">9</button>
+    <button type="button" class="btn btn-light"  onclick="displayValue('-')">-</button>
+   </div>
+   <div>
+    <button type="button" class="btn btn-light"  onclick="displayValue('.')">.</button>
+    <button type="button" class="btn btn-light"  onclick="displayValue('0')">0</button>
+    <button type="button" class="btn btn-light big" onclick="evaluateExp()">=</button>
+   </div>
+</div>
+
+</body>
+<script src="./script.js"></script>
+</html>
