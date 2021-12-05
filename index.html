@@ -15,38 +15,52 @@
      <link rel="stylesheet" href="./calc.css">
 </head>
 <body>
-<div class="main">
-    <input type="text" id="result" style="width: 295px; background-color:ghostwhite">
-   <div class="sub1">
-        <button type="button" class="btn btn-light big" onclick="clearBox()">C</button>
-        <button type="button" class="btn btn-light" onclick="backSpace()">DEL</button>
-        <button type="button" class="btn btn-light"  onclick="displayValue('/')">/</button>
-   </div>
-   <div>
-    <button type="button" class="btn btn-light" onclick="displayValue('1')">1</button>
-    <button type="button" class="btn btn-light"  onclick="displayValue('2')">2</button>
-    <button type="button" class="btn btn-light"  onclick="displayValue('3')">3</button>
-    <button type="button" class="btn btn-light"  onclick="displayValue('*')">*</button>
-   </div>
-   <div>
-    <button type="button" class="btn btn-light"  onclick="displayValue('4')">4</button>
-    <button type="button" class="btn btn-light"  onclick="displayValue('5')">5</button>
-    <button type="button" class="btn btn-light"  onclick="displayValue('6')">6</button>
-    <button type="button" class="btn btn-light"  onclick="displayValue('+')">+</button>
-   </div>
-   <div>
-    <button type="button" class="btn btn-light"  onclick="displayValue('7')">7</button>
-    <button type="button" class="btn btn-light"  onclick="displayValue('8')">8</button>
-    <button type="button" class="btn btn-light"  onclick="displayValue('9')">9</button>
-    <button type="button" class="btn btn-light"  onclick="displayValue('-')">-</button>
-   </div>
-   <div>
-    <button type="button" class="btn btn-light"  onclick="displayValue('.')">.</button>
-    <button type="button" class="btn btn-light"  onclick="displayValue('0')">0</button>
-    <button type="button" class="btn btn-light big" onclick="evaluateExp()">=</button>
-   </div>
-</div>
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-4 col-sm-4">
 
+           </div>
+           <div class="col-lg-4 col-sm-4">
+            
+            <div class="sub border mt-5">
+                
+                <input type="text" id="result" class="form-control" style="height: 70px; background-color:ghostwhite">
+                <div class="sub1">
+                     <button type="button" class="btn btn-light big" style="width: 145px;" onclick="clearBox()">C</button>
+                     <button type="button" class="btn btn-light" onclick="backSpace()">DEL</button>
+                     <button type="button" class="btn btn-light"  onclick="displayValue('/')">/</button>
+                </div>
+                <div>
+                 <button type="button" class="btn btn-light" onclick="displayValue('1')">1</button>
+                 <button type="button" class="btn btn-light"  onclick="displayValue('2')">2</button>
+                 <button type="button" class="btn btn-light"  onclick="displayValue('3')">3</button>
+                 <button type="button" class="btn btn-light"  onclick="displayValue('*')">*</button>
+                </div>
+                <div>
+                 <button type="button" class="btn btn-light"  onclick="displayValue('4')">4</button>
+                 <button type="button" class="btn btn-light"  onclick="displayValue('5')">5</button>
+                 <button type="button" class="btn btn-light"  onclick="displayValue('6')">6</button>
+                 <button type="button" class="btn btn-light"  onclick="displayValue('+')">+</button>
+                </div>
+                <div>
+                 <button type="button" class="btn btn-light"  onclick="displayValue('7')">7</button>
+                 <button type="button" class="btn btn-light"  onclick="displayValue('8')">8</button>
+                 <button type="button" class="btn btn-light"  onclick="displayValue('9')">9</button>
+                 <button type="button" class="btn btn-light"  onclick="displayValue('-')">-</button>
+                </div>
+                <div>
+                 <button type="button" class="btn btn-light"  onclick="displayValue('.')">.</button>
+                 <button type="button" class="btn btn-light"  onclick="displayValue('0')">0</button>
+                 <button type="button" class="btn btn-light big" style="width: 145px;" onclick="evaluateExp()">=</button>
+                </div>
+             </div>
+               </div>
+            </div>
+           <div class="col-lg-4 col-sm-4">
+
+           </div>
+       </div>
+   </div> 
 </body>
 <script src="./script.js"></script>
 </html>
